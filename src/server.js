@@ -5,10 +5,7 @@ const cors = require('cors'); // Add this line
 
 const app = express();
 
-const corsOptions = {
-  origin: 'https://hodlinfodemo.netlify.app', 
-  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-}; 
+app.use(cors());
 
 mongoose.connect(process.env.DB_URL).then(() => console.log("db connected"));
 
