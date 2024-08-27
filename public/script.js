@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function fetchData() {
-  axios.get('https://hodlinfodemo.netlify.app/api/tickers')
+  axios.get("https://holdinfo-rho.vercel.app/api/tickers")
     .then(response => {
       console.log(response.data);
       populateTable(response.data);
@@ -47,9 +47,6 @@ function updateStats(data) {
   if (data.length > 0) {
       const bestPrice = Math.max(...data.map(item => parseFloat(item.last)));
       document.getElementById('bestPrice').textContent = `₹ ${bestPrice.toLocaleString('en-IN')}`;
-      
-      // You can implement logic for 5 mins and 1 hour difference here
-      // For now, we'll just use placeholder values
       document.getElementById('difference').textContent = '0.1%';
       document.getElementById('savings').textContent = '▲ ₹ 1,272';
   }
