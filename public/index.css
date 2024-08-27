@@ -1,0 +1,221 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #191d28;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #191d28;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #3dc6c1;
+}
+
+.controls select,
+.controls button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  background-color: #2e3241;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+}
+
+.timer {
+  background-color: #3dc6c1;
+  color: #ffffff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  padding: 20px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.stat-box {
+  text-align: center;
+}
+
+.stat-value {
+  font-size: 24px;
+  font-weight: bold;
+  display: block;
+}
+
+.stat-label {
+  font-size: 14px;
+  color: #828282;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #2e3241;
+}
+
+th {
+  background-color: #2e3241;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #191d28;
+}
+
+#connectTelegram {
+  background-color: #3dc6c1;
+  color: #ffffff;
+  border: none;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.logo {
+    width:25px;
+    height:25px;
+ }
+
+ .telegram {
+    display : flex;
+    align-items: center;
+    justify-content:center;
+ }
+
+.last_section {
+  display: flex;
+  gap: 2rem;
+}
+
+#link {
+  color: white;
+  underline: none;
+  text-decoration: none;
+}
+
+
+.footer {
+    position: fixed; /* Corrected spelling */
+    bottom: 0px;
+    left:42%;
+
+    text-align: center; /* Center the content */
+  }
+  
+.footer .btn {
+  background-color: rgba(0, 0, 0, 0); /* Fixed to use rgba for transparency */
+  color: #17a2b8; /* Added missing semicolon */
+  border-color: #17a2b8;
+  border-style: solid;
+  padding: 20px 10px; /* Combined padding values */
+}
+
+/* Add this to your existing CSS */
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #333;
+    transition: .4s;
+    border-radius: 34px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #40E0D0;
+    transition: .4s;
+    border-radius: 50%;
+  }
+  
+  input:checked + .slider {
+    background-color: #ccc;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  
+  /* Dark mode styles */
+  body.dark-mode {
+    background-color: #ffffff;
+    color: #191d28;
+  }
+  
+  body.dark-mode header,
+  body.dark-mode footer {
+    background-color: #ffffff;
+  }
+  
+  body.dark-mode .controls select,
+  body.dark-mode .controls button {
+    background-color: #e0e0e0;
+    color: #191d28;
+  }
+  
+  body.dark-mode th {
+    background-color: #e0e0e0;
+    color: #191d28;
+  }
+  
+  body.dark-mode td {
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  body.dark-mode .stat-label {
+    color: #666666;
+  }
+  
+  body.dark-mode #connectTelegram {
+    background-color: #2196F3;
+  }
+  
+ 

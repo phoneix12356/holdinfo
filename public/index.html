@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HODLINFO</title>
+
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">HODLINFO</div>
+      <div class="controls">
+        <select id="currencySelect">
+          <option value="INR">INR</option>
+        </select>
+        <select id="cryptoSelect">
+          <option value="BTC">BTC</option>
+          <option value="ETH">ETH</option>
+          <option value="USDT">USDT</option>
+          <option value="XRP">XRP</option>
+          <option value="TRX">TRX</option>
+          <option value="DASH">DASH</option>
+          <option value="ZEC">ZEC</option>
+          <option value="XEM">XEM</option>
+          <option value="IOST">IOST</option>
+          <option value="WIN">WIN</option>
+          <option value="BTT">BTT</option>
+          <option value="WRX">WRX</option>
+        </select>
+        <button id="buyBtn">
+          <a href="https://wazirx.com/signup" id="link" target="_blank"
+            >BUY BTC</a
+          >
+        </button>
+      </div>
+      <div class="last_section">
+        <div class="timer">
+          <div id="countdown">60</div>
+        </div>
+
+        <button  id="connectTelegram">
+           <span class="telegram" >Connect Telegram </span>
+        </button>
+        <label class="switch">
+          <input type="checkbox" id="modeToggle" />
+          <span class="slider"></span>
+        </label>
+      </div>
+    </header>
+
+    <main>
+      <div class="stats">
+        <div class="stat-box">
+          <span class="stat-value" id="bestPrice">₹ 26,56,110</span>
+          <span class="stat-label">Best Price to Trade</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-value" id="difference">0.1%</span>
+          <span class="stat-label">5 Mins</span>
+        </div>
+        <div class="stat-box">
+          <span class="stat-value" id="savings">▲ ₹ 1,272</span>
+          <span class="stat-label">1 Hour</span>
+        </div>
+      </div>
+      <table id="cryptoTable">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Platform</th>
+            <th>Last Traded Price</th>
+            <th>Buy / Sell Price</th>
+            <th>Difference</th>
+            <th>Savings</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Table rows will be populated by JavaScript -->
+        </tbody>
+      </table>
+    </main>
+    <footer class="footer">
+      <button class="btn">Add hodlinfo to home screen</button>
+    </footer>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
